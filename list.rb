@@ -4,9 +4,10 @@ class MyList
   include MyEnumerable
   attr_reader :list
 
-  def initialize(list)
-    @list = list
-  end
+  def initialize(*args)
+        @list = []
+        args.each { |arg| @list << arg }
+end
 
   def each(&block)
     @list.each(&block)
@@ -14,7 +15,7 @@ class MyList
 end
 
 # Create our list
-list = MyList.new([1, 2, 3, 4])
+list = MyList.new(1, 2, 3, 4)
 
 # Test #all?
 p(list.all_method { |e| e < 5 })
