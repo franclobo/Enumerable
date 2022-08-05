@@ -1,4 +1,4 @@
-module MyEnumerable
+module my_enumerable
 
   def all_method
     list.each do |e|
