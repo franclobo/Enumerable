@@ -1,7 +1,7 @@
-require_relative 'my_enumerable'
+require_relative 'enumerable'
 
 class MyList
-  include my_enumerable
+  include MyEnumerable
   attr_reader :list
 
   def initialize(list)

@@ -1,5 +1,4 @@
-module my_enumerable
-
+module MyEnumerable
   def all_method
     list.each do |e|
       return false unless yield e
