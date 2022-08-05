@@ -25,4 +25,4 @@ p(list.any_method { |e| e == 2 })
 p(list.any_method { |e| e == 5 })
 
 # Test #filter
-p(list.filter_method { |e| e.even? })
+p(list.filter_method(&:even?))
