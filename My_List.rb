@@ -1,4 +1,4 @@
-require_relative "My_Enumerable.rb"
+require_relative 'my_enumerable'
 
 class MyList
   include MyEnumerable
@@ -17,12 +17,12 @@ end
 list = MyList.new([1, 2, 3, 4])
 
 # Test #all?
-p(list.all_method {|e| e < 5})
-p(list.all_method {|e| e > 5})
+p(list.all_method { |e| e < 5} )
+p(list.all_method { |e| e > 5} )
 
 # Test #any?
-p(list.any_method {|e| e == 2})
-p(list.any_method {|e| e == 5})
+p(list.any_method { |e| e == 2} )
+p(list.any_method { |e| e == 5} )
 
 # Test #filter
-p(list.filter_method {|e| e.even?})
+p(list.filter_method { |e| e.even? } )
